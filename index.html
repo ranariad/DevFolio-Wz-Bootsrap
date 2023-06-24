@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devolio Bootstrap Portofolio</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- nav start  -->
+    <nav id="navbar" class="navbar py-2 fixed-top navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand fs-3 fw-semibold" href="index.html">DevFolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link text-uppercase px-0 active"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link text-uppercase px-0 text-white" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link text-uppercase px-0 text-white" href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link text-uppercase px-0 text-white" href="#portofolio"
+                >work</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link text-uppercase px-0 text-white" href="#blog"
+                >Blog</a
+              >
+            </li>
+
+            <li class="nav-item dropdown mx-3">
+              <a
+                class="nav-link text-uppercase px-0 text-white dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Drop down
+                <i class="fa-solid text-white fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu px-2">
+                <li>
+                  <a class="dropdown-item dropdown" href="#">Drop down 1</a>
+                </li>
+                <li class="dropdown-item px-2 dropend">
+                  <a
+                    class="nav-link px-0 text-black dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Deep Drop down
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                  <ul class="dropdown-menu px-2">
+                    <li>
+                      <a class="dropdown-item dropdown" href="#"
+                        >Deep Drop down 1</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item dropdown" href="#"
+                        >Deep Drop down 2</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item dropdown" href="#"
+                        >Deep Drop down 3</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item dropdown" href="#"
+                        >Deep Drop down 4</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item dropdown" href="#"
+                        >Deep Drop down 5</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown" href="#">Drop down 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown" href="#">Drop down 3</a>
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown" href="#">Drop down 4</a>
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown" href="#">Drop down 5</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-uppercase px-0 text-white" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- header start  -->
+    <header class="vh-100 d-flex justify-content-center align-items-center">
+      <div class="header-content text-white text-center">
+        <h1>I am Morgan Freeman</h1>
+        <span class="fw-bold" id="element"></span>
+      </div>
+    </header>
+    <!-- about start  -->
+    <section id="about" class="py-5">
+      <div class="container bg-white p-5 shadow-sm">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-md-5 col-sm-6">
+                <picture>
+                  <img
+                    class="rounded-2 img-fluid"
+                    src="img/testimonial-2.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+              <div class="col-md-7 col-sm-6">
+                <p><span>Name:</span><span>Morgan Freeman</span></p>
+                <p><span>Profile:</span><span>full stack developer</span></p>
+                <p><span>Email:</span><span>contact@example.com</span></p>
+                <p><span>Phone:</span><span>(617) 557-0089</span></p>
+              </div>
+            </div>
+            <h4>Skills</h4>
+            <h5 class="pt-3 fw-light">HTML 85%</h5>
+            <div
+              class="progress rounded-0"
+              role="progressbar"
+              aria-label="Example 1px high"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 85%"></div>
+            </div>
+            <h5 class="pt-3 fw-light">CSS 75%</h5>
+            <div
+              class="progress rounded-0"
+              role="progressbar"
+              aria-label="Example 20px high"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 75%"></div>
+            </div>
+            <h5 class="pt-3 fw-light">PHP 50%</h5>
+            <div
+              class="progress rounded-0"
+              role="progressbar"
+              aria-label="Basic example"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 50%"></div>
+            </div>
+            <h5 class="pt-3 fw-light">JAVASCRIPT 90%</h5>
+            <div
+              class="mb-5 progress rounded-0"
+              role="progressbar"
+              aria-label="Basic example"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h3 class="pb-3 sec-border">About me</h3>
+            <p class="pt-4 lead">
+              Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Praesent sapien massa, convallis a pellentesque nec, egestas non
+              nisi. Nulla porttitor accumsan tincidunt.
+            </p>
+            <p class="lead">
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum
+              ac diam sit amet quam vehicula elementum sed sit amet dui.
+              porttitor at sem.
+            </p>
+            <p class="lead">
+              Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut
+              lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt.
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services start  -->
+    <section id="services" class="services py-5">
+      <div class="container">
+        <div class="section-info pb-5 text-center">
+            <h2 class="fw-bold fs-1">SERVICES</h2>
+            <p class="pb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="services-items">
+            <div class="row gy-5">
+                <div class="col-md-6 col-lg-4 ">
+                    <div class=" bg-white shadow-sm  ">
+                        <div class="service  p-4   text-center " >
+                            <div class="icon  p-5  m-auto d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fa-solid   fa-2xl fa-briefcase  "></i>
+                            </div>
+                            <div class="card-body p-0">
+                              <h5 class="py-3 card-title">WEB DESIGN
+                            </h5>
+                              <p class="card-text text-muted pb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident. </p>
+                            </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 ">
+                    <div class="service bg-white shadow-sm  ">
+                        <div class=" p-4   text-center " >
+                            <div class="icon  p-5  m-auto d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fa-solid fa-2xl fa-list-check"></i>
+                            </div>
+                            <div class="card-body p-0">
+                              <h5 class="py-3 card-title">WEB DESIGN
+                            </h5>
+                              <p class="card-text text-muted pb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident. </p>
+                            </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 ">
+                    <div class="service bg-white shadow-sm  ">
+                        <div class=" p-4   text-center " >
+                            <div class="icon  p-5  m-auto d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fa-solid fa-2xl fa-chart-simple"></i>
+                            </div>
+                            <div class="card-body p-0">
+                              <h5 class="py-3 card-title">WEB DESIGN
+                            </h5>
+                              <p class="card-text text-muted pb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident. </p>
+                            </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 ">
+                    <div class="service bg-white shadow-sm  ">
+                        <div class=" p-4   text-center " >
+                            <div class="icon  p-5  m-auto d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fa-solid fa-2xl fa-binoculars"></i>
+                            </div>
+                            <div class="card-body p-0">
+                              <h5 class="py-3 card-title">WEB DESIGN
+                            </h5>
+                              <p class="card-text text-muted pb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident. </p>
+                            </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 ">
+                    <div class="service bg-white shadow-sm  ">
+                        <div class=" p-4   text-center " >
+                            <div class="icon  p-5  m-auto d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fa-regular fa-2xl fa-sun"></i>
+                            </div>
+                            <div class="card-body p-0">
+                              <h5 class="py-3 card-title">WEB DESIGN
+                            </h5>
+                              <p class="card-text text-muted pb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident. </p>
+                            </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 ">
+                    <div class="service bg-white shadow-sm  ">
+                        <div class=" p-4   text-center " >
+                            <div class="icon  p-5  m-auto d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fa-solid fa-2xl  fa-calendar-week"></i>
+                            </div>
+                            <div class="card-body p-0">
+                              <h5 class="py-3 card-title">WEB DESIGN
+                            </h5>
+                              <p class="card-text text-muted pb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident. </p>
+                            </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+      </div>
+    </section>
+    <!-- counter start  -->
+    <section id="counter" class="py-5" >
+        <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 ">
+                        <div class="service text-white ">
+                            <div class=" p-4   text-center " >
+                                <div class="icon  p-2  m-auto d-flex justify-content-center align-items-center rounded-circle">
+                                    <i class="fa-solid fa-lg fa-check"></i>                                </div>
+                                <div class="card-body p-0">
+                                  <h5 class="py-3 card-title">450
+                                </h5>
+                                <p>WORKS COMPLETED</p>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 ">
+                        <div class="service text-white ">
+                            <div class=" p-4   text-center " >
+                                <div class="icon  p-2  m-auto d-flex justify-content-center align-items-center rounded-circle">
+                                    <i class="fa-regular fa-lg fa-newspaper"></i>                                </div>
+                                <div class="card-body p-0">
+                                  <h5 class="py-3 card-title">25
+                                </h5>
+                                <p>YEARS OF EXPERIENCE
+                                </p>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 ">
+                        <div class="service text-white ">
+                            <div class=" p-4   text-center " >
+                                <div class="icon  p-2  m-auto d-flex justify-content-center align-items-center rounded-circle">
+                                    <i class="fa-solid fa-lg fa-users"></i>
+                                </div>
+                                <div class="card-body p-0">
+                                  <h5 class="py-3 card-title">550
+                                </h5>
+                                <p>TOTAL CLIENTS
+                                </p>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 ">
+                        <div class="service text-white ">
+                            <div class=" p-4   text-center " >
+                                <div class="icon  p-2  m-auto d-flex justify-content-center align-items-center rounded-circle">
+                                    <i class="fa-solid fa-lg fa-award"></i>
+                                </div>
+                                <div class="card-body p-0">
+                                  <h5 class="py-3 card-title">48
+                                </h5>
+                                <p>AWARD WON
+                                </p>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+   
+        
+    </section>
+    <!-- portofolio start  -->
+<section id="portofolio" class="py-5">
+    <div class="container">
+        <div class="section-info pb-5 text-center">
+            <h2 class="fw-bold fs-1 text-uppercase">Portofolio</h2>
+            <p class="pb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="projects">
+            <div class="row gy-5">
+                <div class="col-md-4 ">
+                    <div class="porto-item pb-3 bg-white shadow-sm ">
+                        <div class="proj-img overflow-hidden">
+                            <img class="w-100" src="img/work-1.jpg" alt="">
+                        </div>
+                        <div class="row pt-5  px-3 justify-content-between  align-content-center">
+                            <div class="col-sm-8 ">
+                                <div class=" porto-body ">
+                                    <h5>Lorem impsum dolor</h5>
+                                    <p>
+                                        <span class="porto-title">Web Design </span><span class="text-muted">/ 18 Sep. 2018</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4  ">
+                                <div class="work-icon ms-auto d-flex justify-content-center align-items-center ">
+                                    <a href="portofolio-details.html">
+                                        <i class="fa-solid fa-xl fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="porto-item pb-3 bg-white shadow-sm ">
+                        <div class="proj-img overflow-hidden">
+                            <img class="w-100" src="img/work-2.jpg" alt="">
+                        </div>
+                        <div class="row pt-5  px-3 justify-content-between  align-content-center">
+                            <div class="col-md-8 ">
+                                <div class=" porto-body ">
+                                    <h5>Lorem impsum dolor</h5>
+                                    <p>
+                                        <span class="porto-title">Web Design </span><span class="text-muted">/ 18 Sep. 2018</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4  ">
+                                <div class="work-icon ms-auto d-flex justify-content-center align-items-center ">
+                                    <a href="portofolio-details.html">
+                                        <i class="fa-solid fa-xl fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="porto-item pb-3 bg-white shadow-sm ">
+                        <div class="proj-img overflow-hidden">
+                            <img class="w-100" src="img/work-3.jpg" alt="">
+                        </div>
+                        <div class="row pt-5  px-3 justify-content-between  align-content-center">
+                            <div class="col-md-8 ">
+                                <div class=" porto-body ">
+                                    <h5>Lorem impsum dolor</h5>
+                                    <p>
+                                        <span class="porto-title">Web Design </span><span class="text-muted">/ 18 Sep. 2018</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4  ">
+                                <div class="work-icon ms-auto d-flex justify-content-center align-items-center ">
+                                    <a href="portofolio-details.html">
+                                        <i class="fa-solid fa-xl fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="porto-item pb-3 bg-white shadow-sm ">
+                        <div class="proj-img overflow-hidden">
+                            <img class="w-100" src="img/work-4.jpg" alt="">
+                        </div>
+                        <div class="row pt-5  px-3 justify-content-between  align-content-center">
+                            <div class="col-md-8 ">
+                                <div class=" porto-body ">
+                                    <h5>Lorem impsum dolor</h5>
+                                    <p>
+                                        <span class="porto-title">Web Design </span><span class="text-muted">/ 18 Sep. 2018</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4  ">
+                                <div class="work-icon ms-auto d-flex justify-content-center align-items-center ">
+                                    <a href="portofolio-details.html">
+                                        <i class="fa-solid fa-xl fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="porto-item pb-3 bg-white shadow-sm">
+                        <div class="proj-img overflow-hidden">
+                            <img class="w-100" src="img/work-5.jpg" alt="">
+                        </div>
+                        <div class="row pt-5  px-3 justify-content-between  align-content-center">
+                            <div class="col-md-8 ">
+                                <div class=" porto-body ">
+                                    <h5>Lorem impsum dolor</h5>
+                                    <p>
+                                        <span class="porto-title">Web Design </span><span class="text-muted">/ 18 Sep. 2018</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4  ">
+                                <div class="work-icon ms-auto d-flex justify-content-center align-items-center ">
+                                    <a href="portofolio-details.html">
+                                        <i class="fa-solid fa-xl fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="porto-item pb-3 bg-white shadow-sm  ">
+                        <div class="proj-img overflow-hidden">
+                            <img class="w-100 " src="img/work-6.jpg" alt="">
+                        </div>
+                        <div class="row pt-5  px-3 justify-content-between  align-content-center">
+                            <div class="col-md-8 ">
+                                <div class=" porto-body ">
+                                    <h5>Lorem impsum dolor</h5>
+                                    <p>
+                                        <span class="porto-title">Web Design </span><span class="text-muted">/ 18 Sep. 2018</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4  ">
+                                <div class="work-icon ms-auto d-flex justify-content-center align-items-center ">
+                                    <a href="portofolio-details.html">
+                                        <i class="fa-solid fa-xl fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimonial start  -->
+<section id="testimonial" class="testimonial vh-100  ">
+    <div class="overlay "></div>
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide  " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button   type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner p-5  text-center">
+                  <div class="carousel-item  text-white active">
+                    <div class="testimonia-box">
+                        <img src="img/testimonial-2.jpg" class=" rounded-circle" alt="...">
+                        <h4 class="py-3">Marta Scorta</h4>
+                        <p class="lead w-75 m-auto ">
+                            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                          </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item  text-white active">
+                    <div class="testimonia-box">
+                        <img src="img/testimonial-4.jpg" class=" rounded-circle" alt="...">
+                        <h4 class="py-3">Marta Scorta</h4>
+                        <p class="lead w-75 m-auto ">
+                            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                          </p>
+                    </div>
+                  </div>
+                 
+                </div>
+               
+              </div>
+            </div>
+    
+</section>
+<!-- blog start  -->
+<section id="blog" class=" py-5">
+    <div class="container">
+        <div class="section-info pb-5 text-center">
+            <h2 class="fw-bold fs-1 text-uppercase">BLOG</h2>
+            <p class="pb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="img/post-1.jpg" class="card-img-top" alt="...">
+                    <span class="badge w-25 py-2 ">Travel</span>
+                    <div class="card-body">
+                      <h5 class="card-title pt-3">
+                        <a class="text-decoration-none" href="#">See more ideas about Travel</a>
+                    </h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <p class="m-0">
+                            <img class="rounded-circle" src="img/testimonial-2.jpg" alt="">
+                            <span><a class="text-decoration-none" href="#">Morgan Freeman</a></span>
+                        </p>
+                      <small class="text-body-secondary">
+                        <i class="fa-regular fa-clock"></i>
+                        10 min
+                      </small>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="img/post-2.jpg" class="card-img-top" alt="...">
+                    <span class="badge w-25 py-2 ">Web Design</span>
+                    <div class="card-body">
+                      <h5 class="card-title pt-3">
+                        <a class="text-decoration-none" href="#">See more ideas about Travel</a>
+                    </h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <p class="m-0">
+                            <img class="rounded-circle" src="img/testimonial-2.jpg" alt="">
+                            <span><a class="text-decoration-none" href="#">Morgan Freeman</a></span>
+                        </p>
+                      <small class="text-body-secondary">
+                        <i class="fa-regular fa-clock"></i>
+                        10 min
+                      </small>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="img/post-3.jpg" class="card-img-top" alt="...">
+                    <span class="badge w-25 py-2 ">Web Design</span>
+                    <div class="card-body">
+                      <h5 class="card-title pt-3">
+                        <a class="text-decoration-none" href="#">See more ideas about Travel</a>
+                    </h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <p class="m-0">
+                            <img class="rounded-circle" src="img/testimonial-2.jpg" alt="">
+                            <span><a class="text-decoration-none" href="#">Morgan Freeman</a></span>
+                        </p>
+                      <small class="text-body-secondary">
+                        <i class="fa-regular fa-clock"></i>
+                        10 min
+                      </small>
+                    </div>
+                  </div>
+            </div>
+           
+           
+           
+            
+          </div>
+          
+    </div>
+</section>
+
+<!-- contact start  -->
+<section id="contact" class="py-5 shadow-sm ">
+    <div class="overlay"></div>
+        <div class="container bg-white p-5 position-relative z-3 ">
+            <div class="row ">
+                <div class="col-md-6">
+                <div class="contact-form ">
+                 <h3 class="pb-3 sec-border text-black">Send Message Us</h3>
+                 <div class="form-items pt-3">
+                     <div class="mb-3">
+                       <input
+                         type="text"
+                         class="form-control text-capitalize rounded-0 text-muted p-2"
+                         placeholder="your name"
+                       />
+                     </div>
+                     <div class="mb-3">
+                       <input
+                         type="email"
+                         class="form-control rounded-0 text-muted p-2"
+                         placeholder="Your Email"
+                       />
+                     </div>
+                     <div class="mb-3">
+                       <input
+                         type="text"
+                         class="form-control text-capitalize rounded-0 text-muted p-2"
+                         placeholder="Sybject"
+                       />
+                     </div>
+                     <div class="mb-3">
+                       <textarea
+                         class="form-control rounded-0 text-muted p-2"
+                         rows="5"
+                         placeholder="Message"
+                       ></textarea>
+                     </div>
+                     <div class="col-auto text-center mt-4 submit">
+                       <button
+                         type="submit"
+                         class="btn btn-primary border-0 rounded-5 py-2 px-4 fs-5 text-light text-capitalize"
+                       >
+                         send message
+                       </button>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="col-md-6">
+                 <h3 class="pb-3 sec-border text-black">Get in Touch</h3>
+                 <p class="lead pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem expedita aperiam aliquid at. Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis mollitia inventore?</p>
+                 <ul class="list-group">
+                     <li class="list-group-item border-0 px-0">
+                         <i class="fa-solid pe-3 fa-location-dot"></i>
+                         329 WASHINGTON ST BOSTON, MA 02108
+                     </li>
+                     <li class="list-group-item border-0 px-0">
+                         <i class="fa-solid pe-3 fa-mobile-screen"></i>
+                         (617) 557-0089
+                     </li>
+                     <li class="list-group-item border-0 px-0">
+                         <i class="fa-regular pe-3 fa-envelope"></i>
+                         contact@example.com
+                     </li>
+                 </ul>
+ 
+                 <div class="social-media pt-3 d-flex">
+                     <div class="icon d-flex justify-content-center align-items-center">
+                         <i class="fa-brands fa-facebook"></i>
+                     </div>
+                     <div class="icon d-flex justify-content-center align-items-center">
+                         <i class="fa-brands fa-instagram"></i>
+                     </div>
+                     <div class="icon d-flex justify-content-center align-items-center">
+                         <i class="fa-brands fa-twitter"></i>
+                     </div>
+ 
+                     <div class="icon d-flex justify-content-center align-items-center">
+                         <i class="fa-brands fa-linkedin"></i>
+                     </div>
+                     
+ 
+                 </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</section>
+
+<!-- footter start  -->
+<footer class="text-center mb-0 text-light py-4">
+    <div class="container-sm">
+      <p class="mb-1">
+        &copy; Copyright <span class="fw-bold">DevFolio</span>. All Rights
+        Reserved
+      </p>
+      <p class="mb-0">
+        Designed by
+        <a href="#" class="text-decoration-none text-light">BootstrapMade</a>
+      </p>
+      <div class="top  rounded-circle d-flex align-items-center justify-content-center position-fixed  ">
+        <a href="#top">
+            <i class="text-white fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Designer.", "Freelancer", "Photographer"],
+        loop: true,
+        typeSpeed: 50,
+        backSpeed: 80,
+        startDelay: 1000,
+        backDelay: 1500,
+        showCursor: true,
+      });
+    </script>
+  </body>
+</html>

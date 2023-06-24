@@ -1,0 +1,277 @@
+:root{
+    --primary-color:#0078ff;
+    --hover-border:#cde1f8;
+    --footerbg: #0062d3;
+    --nav-background: rgba(0,0,0,0.9);
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+
+/* shared items  */
+.section-info p{
+    position: relative;
+}
+
+.section-info p::after{
+    content: "";
+    width: 3%;
+    height: 5px;
+    background-color:var(--primary-color) ;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+}
+
+.sec-border{
+    position: relative;
+    
+}
+ .sec-border::after{
+    content: "";
+    width: 20%;
+    height: 3px;
+    background-color:var(--primary-color) ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.navbar,
+:root:has(#hero:target) nav{
+    background-color: var(--nav-background);
+}
+
+/* .top, :root:has(.bannar-details:target)  */
+
+:root:has(.bannar-details:target) nav{
+    background-color: var(--nav-background);
+}
+
+/* nav start  */
+#navbar .dropdown:hover > .dropdown-menu,
+#navbar .dropend:hover > .dropdown-menu{
+    display: block;
+}
+#navbar .dropend:hover > .dropdown-menu{
+    position: absolute;
+    top: 0;
+    right: 100%;
+}
+#navbar .navbar-nav .nav-link{
+    position: relative;
+}
+
+#navbar .navbar-nav .nav-link::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #FFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+    border: 0;
+   
+
+}
+#navbar .navbar-nav .nav-link.active::after,
+#navbar .navbar-nav .nav-link.show::after,
+#navbar .navbar-nav .nav-link:hover::after {
+    
+    width: 70%;
+}
+
+/* header start  */
+
+header
+{
+    background: url(../img/hero-bg.jpg) no-repeat center/cover fixed;
+}
+
+.header-content span{
+    font-size: 2rem;
+
+}
+.header-content h1{
+    font-size: 4rem;
+}
+
+/* about start  */
+
+
+/* services start  */
+#services.services-items .service   {
+    
+    border-radius: 1rem;
+}
+ .icon {
+    width: 70px;
+    height: 70px;
+    border: 10px solid var(--primary-color);
+    transition: all .3s;
+}
+#services .service:hover .icon
+{
+    border-color: var(--hover-border);
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+
+/* counter start  */
+#counter{
+    background: url(../img/counters-bg.jpg) center/cover no-repeat;
+position: relative;
+
+}
+
+#counter .icon{
+    border: 10px solid var(--hover-border);
+}
+#counter .service{
+    position: relative;
+    z-index: 1;
+}
+
+/* portofolio start  */
+#portofolio .porto-body .porto-title{
+    color: var(--primary-color);
+}
+#portofolio .work-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    
+}
+#portofolio .work-icon i{
+    color: var(--primary-color);
+}
+
+.proj-img img{
+    transition: all .7s;
+}
+
+.porto-item:hover img{
+    scale: 1.3;
+}
+/* testimonial start  */
+#testimonial , 
+#hero {
+    background: url(../img/overlay-bg.jpg) center/cover no-repeat fixed;
+    position: relative;
+}
+
+
+/* blog start  */
+#blog  .badge{
+    background-color: var(--primary-color);
+    margin: -15px auto;
+}
+
+
+#blog .card-footer img{
+    width: 30px;
+}
+
+
+ #blog a{
+    color: #1e1e1e;
+    transition: all .3s;
+}
+ #blog a:hover{
+    color: var(--primary-color);
+}
+/* contact start  */
+
+#contact {
+    background: url(../img/overlay-bg.jpg) center/cover;
+    position: relative;
+    
+}
+
+#contact .list-group-item  i{
+    color: var(--primary-color);
+}
+
+.social-media .icon{
+    border: 3px solid var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  
+}
+
+/* footer start  */
+footer{
+    background-color: var(--footerbg);
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+
+/* portofolio Details  */
+
+.bannar-details .details{
+    position: relative;
+    z-index: 20;
+    height:350px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    color: #FFF;
+}
+#porto-detalis-proj .carousel-indicators{
+    margin-bottom: -10px;
+    bottom: -32px;
+    padding-block: 20px;
+}
+
+#porto-detalis-proj .carousel-indicators [data-bs-target] {
+
+border: 2px solid var(--primary-color);
+}
+#porto-detalis-proj .carousel-indicators .active{
+    background-color: var(--primary-color);
+}
+#porto-detalis-proj .project-information a{
+    transition: all .3s;
+}
+#porto-detalis-proj .project-information a:hover{
+    color: var(--primary-color) !important;
+}
+
+.top{
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+   visibility: 1;
+    right: 2%;
+    bottom: 2%;
+}
+
+:root:has(#navbar) .top{
+    visibility: 0;
+}
